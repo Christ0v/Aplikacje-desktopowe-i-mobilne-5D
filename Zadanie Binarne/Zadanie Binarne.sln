@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.11.35222.181
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zadanie Binarne", "Zadanie Binarne\Zadanie Binarne.csproj", "{D5CAE197-0A0B-4E9B-A88A-D3ED92B740FE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Zadanie Binarne", "Zadanie Binarne\Zadanie Binarne.csproj", "{D5CAE197-0A0B-4E9B-A88A-D3ED92B740FE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Matura Grudzien", "Matura Grudzien", "{A967B497-461F-4C87-AE43-92E96C4EF924}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zadanie1", "Zadanie1\Zadanie1.csproj", "{B1450CE1-95BB-4795-A069-2DBAA30A0FBA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,9 +19,16 @@ Global
 		{D5CAE197-0A0B-4E9B-A88A-D3ED92B740FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D5CAE197-0A0B-4E9B-A88A-D3ED92B740FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D5CAE197-0A0B-4E9B-A88A-D3ED92B740FE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B1450CE1-95BB-4795-A069-2DBAA30A0FBA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B1450CE1-95BB-4795-A069-2DBAA30A0FBA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B1450CE1-95BB-4795-A069-2DBAA30A0FBA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B1450CE1-95BB-4795-A069-2DBAA30A0FBA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{B1450CE1-95BB-4795-A069-2DBAA30A0FBA} = {A967B497-461F-4C87-AE43-92E96C4EF924}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {31B0C1D9-580F-4B78-8279-AE5390154979}
