@@ -80,3 +80,35 @@ while ((strNumber = sr.ReadLine()) != null)
 Console.WriteLine($"{maxNumber} {maxCount} {minNumber} {minCount}" );
 
 sr.Close();
+
+//zadanie 3.4
+int[] counterDigit = new int[16];
+
+sr = new StreamReader("liczby_przyklad.txt");
+
+while ((strNumber = sr.ReadLine()) != null)
+{
+    if (int.TryParse(strNumber, out int number))
+    {
+        do
+        {
+            int rest = number % 16;
+
+            counterDigit[rest]++;
+
+
+            number /= 16;
+        }
+        while (number != 0);
+    }
+}
+
+Console.WriteLine($"Dla zdania 3.4: ");
+
+for(int i = 0; i < counterDigit.Length; i++)
+{
+
+    Console.WriteLine($"{i.ToString("X")} : {counterDigit[i]}");
+}
+
+sr.Close();
