@@ -108,7 +108,7 @@ Console.WriteLine($"Dla zdania 3.4: ");
 for(int i = 0; i < counterDigit.Length; i++)
 {
 
-    Console.WriteLine($"{i.ToString("X")} : {counterDigit[i]}");
+    Console.WriteLine($"{i.ToString("X")} : {counterDigit[i]}a");
 }
 
 sr.Close();
