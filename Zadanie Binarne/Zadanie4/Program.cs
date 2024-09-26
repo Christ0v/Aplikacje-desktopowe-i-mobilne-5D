@@ -20,4 +20,3 @@ for (int i = 0; i < lines.Length; i++)
 
 Console.WriteLine($"{count} {firstMatch}");
 
-//Zadanie 4.2

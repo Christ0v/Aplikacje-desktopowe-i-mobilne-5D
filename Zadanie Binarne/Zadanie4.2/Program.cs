@@ -1,7 +1,7 @@
 ﻿
     string[] lines = File.ReadAllLines("przyklad.txt");
 
-    List<int> RozkladNaCzynniki(int num)
+    List<int> rozkladNaCzynniki(int num)
     {
         List<int> dzielniki = new List<int>();
         int i = 2;
@@ -28,8 +28,8 @@
     {
         string wiersz = lines[i];
         string line = wiersz;
-        ilosc_dzielnikow = RozkladNaCzynniki(int.Parse(line)).Count;
-        ilosc_dzielnikow_rozne = new HashSet<int>(RozkladNaCzynniki(int.Parse(line))).Count;
+        ilosc_dzielnikow = rozkladNaCzynniki(int.Parse(line)).Count;
+        ilosc_dzielnikow_rozne = new HashSet<int>(rozkladNaCzynniki(int.Parse(line))).Count;
 
         if (ilosc_dzielnikow > maks_ilosc_dzielnikow)
         {
