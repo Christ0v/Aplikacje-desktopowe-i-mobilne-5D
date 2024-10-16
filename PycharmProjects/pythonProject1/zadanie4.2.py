@@ -3,9 +3,9 @@ fileNumbers = file.read()
 listOfNumbers = list(fileNumbers.split())
 maxAbsolute = 0
 lastNumber = 0
-print(listOfNumbers)
+
 reverseNumbers = list(fileNumbers[::-1].split())[::-1]
-print(reverseNumbers)
+
 for i in range(len(listOfNumbers)):
     if abs(int(listOfNumbers[i]) - int(reverseNumbers[i])) > maxAbsolute:
         maxAbsolute = abs(int(listOfNumbers[i]) - int(reverseNumbers[i]))

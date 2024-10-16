@@ -3,18 +3,17 @@ counterSecond = 0
 file= open("przyklad.txt","r")
 fileNumbers = file.read()
 listOfNumbers = list(fileNumbers.split())
-print(listOfNumbers)
-print(set(listOfNumbers))
-print(len(set(listOfNumbers)))
+
 for i in range(len(listOfNumbers)):
     if listOfNumbers.count(listOfNumbers[i]) == 2:
         counter += 1
+print(len(set(listOfNumbers)))
 
-result = counter / 2
-print(int(result))
 for i in range(len(listOfNumbers)):
     if listOfNumbers.count(listOfNumbers[i]) == 3:
         counterSecond += 1
+result = counter / 2
+print(int(result))
 
-resultSecond = counterSecond / 2
+resultSecond = counterSecond / 3
 print(int(resultSecond))

@@ -2,10 +2,12 @@ file = open("przyklad.txt","r")
 fileNumbers = file.read()
 
 fileNumbers = fileNumbers[::-1]
-numbers = list(fileNumbers.split())
-print(numbers)
 
-for i in range(len(numbers)):
+numbersSplited = list(fileNumbers.split())
 
-    if int(numbers[i]) % 17 == 0:
-        print(numbers[i])
+print(numbersSplited)
+
+for i in range(len(numbersSplited)):
+
+    if int(numbersSplited[i]) % 17 == 0:
+        print(numbersSplited[i])
