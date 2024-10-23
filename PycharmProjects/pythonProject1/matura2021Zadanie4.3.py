@@ -4,9 +4,9 @@ rows = file.readlines()
 password = ''
 for row in rows:
     row = row.strip()
-    optionOne = row + row[0]
+    wordFirst = row + row[0]
 
-    if optionOne == optionOne[::-1]:
-        password += optionOne[len(optionOne)  // 2]
+    if wordFirst == wordFirst[::-1]:
+        password += wordFirst[len(wordFirst)  // 2]
 
 print(password)

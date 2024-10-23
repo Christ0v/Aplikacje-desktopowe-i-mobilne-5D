@@ -4,14 +4,15 @@ rows = file.readlines()
 password = ''
 for row in rows :
     row = row.strip()
-    number1 = -1
+    firstDigit = -1
+    secondDigit = -1
 
     for char in row :
-        if char.isdigit() and number1 == -1 :
-            number1 = char
+        if char.isdigit() and firstDigit == -1 :
+            firstDigit = char
         elif char.isdigit() :
-            number2 = char
-            asciiCode = number1 + number2
+            secondDigit = char
+            asciiCode = firstDigit + secondDigit
 
             if 65 <= int(asciiCode) <= 90 :
                 letter = chr(int(asciiCode))
