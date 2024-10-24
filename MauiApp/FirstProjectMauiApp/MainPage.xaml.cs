@@ -13,6 +13,8 @@
             fruitsCollections.Add("Gruszka");
 
             fruitPicker.ItemsSource = fruitsCollections;
+
+            fruitPicker.SelectedItem = "Jabłko";
         }
 
         private void Button_Clicked(object sender, EventArgs e)
@@ -29,7 +31,12 @@
 
         private void Favorite_Button_Clicked(object sender, EventArgs e)
         {
+            favoriteFruitLabel.Text = "Wybrano ulubiony owoc: " + fruitPicker.SelectedItem;
+        }
 
+        private void add_Image(object sender, EventArgs e)
+        {
+            ourImage.Source = "scout_flash.png";
         }
     }
 
