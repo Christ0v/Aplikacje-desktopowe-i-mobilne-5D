@@ -23,9 +23,10 @@
         <Button Text="Zatwierdź"
                 x:Name="buttonConfirm"
                 HorizontalOptions="Center"
-                Clicked="buttonConfirm_Clicked"/>
+                Clicked="buttonConfirm_Clicked"
+                />
 
-        <Label x:Name="showMessage"
+        <Label x:Name="labelMessage"
                HorizontalOptions="Center"
                Text="Autor: Krzysztof Pająk"/>
 

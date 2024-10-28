@@ -20,18 +20,19 @@
             {
                 if (!strEntryMail.Contains(letter))
                 {
+                    labelMessage.Text = "Nieprawidłowy adres e-mail";
+                }
 
-                    showMessage.Text = "Nieprawidłowy adres e-mail";
-                }
-                if (strEntryPassword != strRepeatPassword)
+                else if (strEntryPassword != strRepeatPassword)
                 {
-                    showMessage.Text = "Hasła się różnią";
+                    labelMessage.Text = "Hasła się różnią";
                 }
-                if (strEntryMail.Contains(letter) && strEntryPassword == strRepeatPassword)
-                    showMessage.Text = "Witaj " + strEntryMail;
+
+                else
+                    labelMessage.Text = "Witaj " + strEntryMail;
             }
             else
-                showMessage.Text = "Podano złe dane";
+                labelMessage.Text = "Podano złe dane";
         }
     }
 
