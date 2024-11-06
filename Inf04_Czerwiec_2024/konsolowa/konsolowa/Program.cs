@@ -23,6 +23,8 @@ namespace konsolowa
         {
             List<Album> albums = ReadAlbumFromFile("Data.txt");
             showAlbums(albums);
+
+            Console.ReadLine(); // zapobiega zamknięciu konsoli
         }
         private static List<Album> ReadAlbumFromFile(string filePath)
         {
@@ -30,12 +32,12 @@ namespace konsolowa
             using (StreamReader r = new StreamReader(filePath))
             {
                 string line;
-                string parts;
+                //string parts;
                 while ((line = r.ReadLine()) != null)
                 {
-                    parts = line;
+                    //parts = line;
                     Album album = new Album();
-                    album.artist = parts;
+                    album.artist = line;
                     album.album = r.ReadLine();
                     album.songsNumber = r.ReadLine();
                     album.year = uint.Parse(r.ReadLine());
@@ -49,8 +51,9 @@ namespace konsolowa
         }
         private static void showAlbums(List<Album> albums) 
         {
-            foreach (Album album in albums) 
+            for (int i = 0; i < albums.Count; i++) 
             {
+                Album album = albums[i];
                 Console.WriteLine(album.artist);
                 Console.WriteLine(album.album);
                 Console.WriteLine(album.songsNumber);
@@ -58,6 +61,7 @@ namespace konsolowa
                 Console.WriteLine(album.downloadNumber);
                 Console.WriteLine(album.newLine);
                 Console.WriteLine();
+               
             }
         }
         class Album
