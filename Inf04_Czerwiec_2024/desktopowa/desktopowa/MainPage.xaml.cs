@@ -10,7 +10,8 @@ namespace desktopowa
         public MainPage()
         {
             InitializeComponent();
-            using (StreamReader reader = new StreamReader("Data.txt"))
+            string filePath = Path.Combine(AppContext.BaseDirectory, "Data.txt");
+            using (StreamReader reader = new StreamReader(filePath))
             {
                 string line;
                 while ((line = reader.ReadLine()) != null)

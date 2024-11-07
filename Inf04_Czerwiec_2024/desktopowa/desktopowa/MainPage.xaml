@@ -68,23 +68,23 @@
                />
 
         <ImageButton
-            Source="obraz2.png"
-            HorizontalOptions="End"
-            VerticalOptions= "Center"
-            Clicked="leftButton_Clicked"
-            />
+               Source="obraz2.png"
+               HorizontalOptions="End"
+               VerticalOptions= "Center"
+               Clicked="leftButton_Clicked"
+               />
         
         <Button Text="Pobierz"
-            x:Name="downloadButton"
-            FontSize="20"
-            BackgroundColor="#61D918"
-            Margin="0, 300, 0, 0"
-            HorizontalOptions="Center"
-            VerticalOptions="Center"
-            FontAttributes="Bold"
-            TextColor="Black"
-            Clicked="downloadButton_Clicked"
-            />
+               x:Name="downloadButton"
+               FontSize="20"
+               BackgroundColor="#61D918"
+               Margin="0, 300, 0, 0"
+               HorizontalOptions="Center"
+               VerticalOptions="Center"
+               FontAttributes="Bold"
+               TextColor="Black"
+               Clicked="downloadButton_Clicked"
+               />
     </Grid>
 
 </ContentPage>
